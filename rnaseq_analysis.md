@@ -314,7 +314,7 @@ summary(res) #Summarise comparison of condition-specific variation
 plotDispEsts(samples.dds, log="xy", main='Estimate of per-gene dispersion by fitted mean')
 ```
 
-![](img/img/figure-gfm/plot%20dipersion-1.png)<!-- -->
+![](img/figure-gfm/plot%20dipersion-1.png)<!-- -->
 
 ### 3.2 Explore group relationship using heatmaps and PCA.
 
