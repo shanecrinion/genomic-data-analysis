@@ -314,7 +314,7 @@ summary(res) #Summarise comparison of condition-specific variation
 plotDispEsts(samples.dds, log="xy", main='Estimate of per-gene dispersion by fitted mean')
 ```
 
-![](figure-gfm/plot%20dipersion-1.png)<!-- -->
+![](img/img/figure-gfm/plot%20dipersion-1.png)<!-- -->
 
 ### 3.2 Explore group relationship using heatmaps and PCA.
 
@@ -343,7 +343,7 @@ pheatmap(samples.correl,
          annotation_row = samp_pheno['status'])
 ```
 
-![](figure-gfm/heatmap-1.png)<!-- -->
+![](img/figure-gfm/heatmap-1.png)<!-- -->
 
   - **Principal Component Analysis** is used to emphasise variation and
     bring out strong patterns.
@@ -360,7 +360,7 @@ plotPCA(samples.logexprs,
     plot.title = element_text(hjust=.5)) 
 ```
 
-![](figure-gfm/pca-1.png)<!-- -->
+![](img/figure-gfm/pca-1.png)<!-- -->
 
 # Part 4. Explore differential gene expression
 
@@ -394,7 +394,7 @@ ggplot(d,aes(x = value, col=variable, fill=variable)) +
 
     ## Warning: Removed 53659 rows containing non-finite values (stat_bin).
 
-![](figure-gfm/histograms-1.png)<!-- -->
+![](img/figure-gfm/histograms-1.png)<!-- -->
 
 ### 4.2 MA Plot
 
@@ -417,7 +417,7 @@ DESeq2::plotMA(samples.dds,
                ylim=c(-8,8))
 ```
 
-![](figure-gfm/ma-1.png)<!-- -->
+![](img/figure-gfm/ma-1.png)<!-- -->
 
 ### 4.3 Volcano Plot
 
@@ -446,7 +446,7 @@ EnhancedVolcano(res.df,
     ## Warning: One or more p-values is 0. Converting to 10^-1 * current lowest non-
     ## zero p-value...
 
-![](figure-gfm/volcano-1.png)<!-- -->
+![](img/figure-gfm/volcano-1.png)<!-- -->
 
 ### 4.4 Table
 
